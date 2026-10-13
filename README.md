@@ -103,7 +103,32 @@ pip install -r requirements.txt
 
 Download the RetailRocket dataset from [Kaggle](https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset).
 
-Place the required CSV files in the paths configured in the notebook. By default, the notebook expects the filenames listed in the Dataset section to be available at its configured paths.
+The dataset files are not included in this repository and must be downloaded separately.
+
+Required Files:-
+
+Download the dataset and place these files inside a folder named data/ in the repository root:
+
+events.csv
+
+item_properties_part1.csv
+
+item_properties_part2.csv
+
+category_tree.csv
+
+The expected directory structure is:
+
+anomalous-interaction-recommender/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── your_notebook.ipynb
+└── data/
+    ├── events.csv
+    ├── item_properties_part1.csv
+    ├── item_properties_part2.csv
+    └── category_tree.csv
 
 ### 4. Run the notebook
 
