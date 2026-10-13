@@ -62,7 +62,9 @@ anomalous-interactions-recommender/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-└── midsem_report.ipynb
+├── anomaly_code.ipynb
+└── data/
+    └── .gitkeep
 ```
 
 The notebook filename and directory structure above are examples. Update them to match the files actually committed to this repository.
@@ -103,32 +105,70 @@ pip install -r requirements.txt
 
 Download the RetailRocket dataset from [Kaggle](https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset).
 
-The dataset files are not included in this repository and must be downloaded separately.
+The dataset files are **not included in this repository** and must be downloaded separately.
 
-Required Files:-
+### Required Files
 
-Download the dataset and place these files inside a folder named data/ in the repository root:
+Download the dataset and place the following files inside the `data/` folder in the repository root:
 
-events.csv
+- `events.csv`
+- `item_properties_part1.csv`
+- `item_properties_part2.csv`
+- `category_tree.csv`
 
-item_properties_part1.csv
+### Directory Structure
 
-item_properties_part2.csv
+After downloading the dataset, your project should have the following structure:
 
-category_tree.csv
-
-The expected directory structure is:
-
+```text
 anomalous-interaction-recommender/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── your_notebook.ipynb
+├── anomaly_code.ipynb
 └── data/
+    ├── .gitkeep
     ├── events.csv
     ├── item_properties_part1.csv
     ├── item_properties_part2.csv
     └── category_tree.csv
+```
+
+**Note:** The `data/` folder is included in the repository using a `.gitkeep` placeholder. The CSV files are excluded from GitHub and must be downloaded separately.
+
+### Run the Project
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/rehaan-rc/Anomalous-Interaction-Recommender.git
+   cd Anomalous-Interaction-Recommender
+   ```
+
+2. **Install the required dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Download the dataset** from the [RetailRocket dataset page on Kaggle](https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset).
+
+4. **Place the CSV files** inside the `data/` folder in the repository root.
+
+5. **Launch Jupyter Notebook:**
+
+   ```bash
+   jupyter notebook
+   ```
+
+6. **Run the notebook** from top to bottom.
+
+### Important Notes
+
+- Ensure all four CSV files are present in the `data/` folder before running the notebook.
+- The notebook expects the dataset paths to be configured as `data/events.csv`, `data/item_properties_part1.csv`, `data/item_properties_part2.csv`, and `data/category_tree.csv`.
+- Run the notebook from the repository root to ensure the relative paths work correctly.
+- Install all required dependencies before executing the experiments.
 
 ### 4. Run the notebook
 
