@@ -89,11 +89,9 @@ For reproducible experiments, it is recommended to run the notebook in a clean v
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/anomalous-interactions-recommender.git
+git clone https://github.com/rehaan-rc/anomalous-interactions-recommender.git
 cd anomalous-interactions-recommender
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username.
 
 ### 2. Install dependencies
 
