@@ -89,7 +89,7 @@ For reproducible experiments, it is recommended to run the notebook in a clean v
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/rehaan-rc/anomalous-interactions-recommender.git
+git clone https://github.com/rehaan-rc/Anomalous-Interaction-Recommender.git
 cd anomalous-interactions-recommender
 ```
 
